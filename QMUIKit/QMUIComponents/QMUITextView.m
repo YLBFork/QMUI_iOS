@@ -28,6 +28,7 @@ static const CGFloat kSystemTextViewDefaultFontPointSize = 12.0f;
 /// 当系统的 textView.textContainerInset 为 UIEdgeInsetsZero 时，文字与 textView 边缘的间距。实测得到，请勿修改（在输入框font大于13时准确，小于等于12时，y有-1px的偏差）。
 static const UIEdgeInsets kSystemTextViewFixTextInsets = {0, 5, 0, 5};
 
+
 // 私有的类，专用于实现 QMUITextViewDelegate，避免 self.delegate = self 的写法（以前是 QMUITextView 自己实现了 delegate）
 @interface _QMUITextViewDelegator : NSObject <QMUITextViewDelegate>
 
